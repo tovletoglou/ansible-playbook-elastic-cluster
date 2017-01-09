@@ -1,0 +1,31 @@
+---
+
+initialize_packages:
+  - curl
+  - gcc
+  - kernel-devel
+  - libzip
+  - man
+  - nano
+  - net-tools
+  - nmap
+  - postfix
+  - tree
+  - unzip
+  - vim
+  - wget
+  - zip
+
+dotfile_users:
+  - {
+      name: root,
+      dest: /root,
+      gitname: GIT_ROOT_NAME,
+      gitmail: ROOT@EMAIL
+    }
+  - {
+      name: vagrant,
+      dest: /home/vagrant,
+      gitname: GIT_VAGRANT_NAME,
+      gitmail: VAGRANT@EMAIL
+    }
